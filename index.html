@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RDC Isochrones</title>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="libs/leaflet/leaflet.css">
+
+    <script src="libs/jquery.js" type="text/javascript"></script>
+    <script src="libs/popper.js" type="text/javascript"></script>
+    <script src="libs/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <script src="libs/bootstrap-select/bootstrap-select.js" type="text/javascript"></script>
+    <script src="libs/leaflet/leaflet.js"></script>
+    <script src="libs/axios.js"></script>
+    <script src="libs/turf.js"></script>
+    <style media="screen">
+      #map{
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-12 text-center">
+      <div class="col-3">
+          <select class="selectpicker form-control" title="Moyen de transport" id="transport_mode">
+            <option value="driving-car">Voiture</option>
+            <option value="cycling-regular">Vélo</option>
+            <option value="foot-walking">Piéton</option>
+          </select>
+      </div>
+      <div class="col-8" id="map"></div>
+    </div>
+
+
+    <script src="scripts/plop.js"></script>
+  </body>
+</html>
