@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Teko';
+  src:  url('../fonts/Teko-Medium.woff2') format('woff2'),
+        url('../fonts/Teko-Medium.woff') format('woff');
+}
+
+.title-menu{
+  height: 8vh;
+}
+
+.top-menu{
+  display: inline-block;
+}
+
+.app-title{
+  font-family: 'Teko', sans-serif;
+  font-size: 2.3em;
+  padding-left: 10px;
+  color: black;
+}
+
+.content{
+  height: 92vh;
+  padding:0;
+  margin: 0;
+}
+
+.map{
+  height: 92vh;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.map-control-panel{
+  position: absolute;
+  z-index: 450;
+}
+.legend-button{
+  float: right;
+  margin-left: 1em;
+  margin-top:1em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+.legend-button:hover{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2), 0 0 15px 0 rgba(0,0,0,.5);
+}
+.legend-panel{
+  display: none;
+  float: left;
+  margin: 0;
+  height:92vh;
+  width: 20em;
+  background-color: white;
+  text-align: center;
+}
+.closed{
+  display: none;
+}
+.legend-title{
+  border-bottom: 1px solid #eee;
+  font-family: 'Teko', sans-serif;
+  color: #d12121;
+  font-size: 1.2em;
+}
+.inactive-icon{
+  display: none;
+}
+.pop-infos{
+  margin-top: 10px;
+}
+.table-infor{
+  font-size: 0.8em;
+}
+
+.btn-link{
+  color:#57595C;
+}
+.btn-link:hover{
+  color:#1A1A1B;
+}

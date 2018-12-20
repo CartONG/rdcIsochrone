@@ -14,25 +14,51 @@
     <script src="libs/leaflet/leaflet.js"></script>
     <script src="libs/axios.js"></script>
     <script src="libs/turf.js"></script>
-    <style media="screen">
-      #map{
-        height: 500px;
-      }
-    </style>
+    <script src="libs/leaflet-omnivore.js"></script>
+
+    <link rel="stylesheet" href="static/css/app.css">
   </head>
   <body>
-    <div class="col-12 text-center">
-      <div class="col-3">
-          <select class="selectpicker form-control" title="Moyen de transport" id="transport_mode">
-            <option value="driving-car">Voiture</option>
-            <option value="cycling-regular">Vélo</option>
-            <option value="foot-walking">Piéton</option>
+    <div class="col-12 shadow-sm p-1 bg-white title-menu">
+      <div class="col-6 top-menu">
+        <img src="static/img/CartONG_logo_0.png" alt="">
+        <span class="app-title">RDC Health Accessibility</span>
+      </div>
+      <div class="col-2 top-menu">
+          <select class="selectpicker form-control" title="Health zone" id="zds">
+            <option value="CD7402ZS01">Kalemie</option>
           </select>
       </div>
-      <div class="col-8" id="map"></div>
+      <div class="col-2 top-menu">
+          <select class="selectpicker form-control" title="Transport mode" id="transport_mode">
+            <option value="driving-car">Car</option>
+            <option value="cycling-regular">Cycle</option>
+            <option selected value="foot-walking">Foot</option>
+          </select>
+      </div>
+
+    </div>
+    <div class="col-12 content">
+      <div class="map-control-panel">
+        <div class="legend-panel">
+
+        </div>
+        <div class="legend-button">
+          <div class="opened">
+            <img src="static/img/legend-open-icon.svg" alt="Legend">
+            <img class="inactive-icon" src="static/img/legend-open-icon-active.svg" alt="Legend">
+          </div>
+          <div class="closed">
+            <img class="inactive-icon" src="static/img/legend-close-icon.svg" alt="Legend">
+            <img src="static/img/legend-close-icon-active.svg" alt="Legend">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 map" id="map"></div>
     </div>
 
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/map.js"></script>
 
-    <script src="scripts/plop.js"></script>
   </body>
 </html>
