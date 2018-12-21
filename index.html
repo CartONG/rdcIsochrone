@@ -26,6 +26,7 @@
       </div>
       <div class="col-2 top-menu">
           <select class="selectpicker form-control" title="Health zone" id="zds">
+            <option value="CD6210ZS01">Fizi</option>
             <option value="CD7402ZS01">Kalemie</option>
           </select>
       </div>
@@ -41,7 +42,18 @@
     <div class="col-12 content">
       <div class="map-control-panel">
         <div class="legend-panel">
+          <div class="col-12 app-presentation">
+            <p><img src="static/img/sdg-icon-goal-03.png" alt="" class="sdg-logo">This prototype dashboard aims at measuring <strong>SDG 3.8.1</strong> “Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population)”. It displays the accessibility of health centers by measuring the time to access them with different transport mode (foot, bicycle, car). All the data used in it (both for roads network & population density, and for the health centers) is extracted from OpenStreetMap. The isochrone (transportation time calculation) is based on <a href="https://openrouteservice.org/" target="_blank">OpenRouteService</a>, developed by the University of Heidelberg. Please notice the total population displayed in this dashboard may be inferior to the actual census value, depending on the completeness of the mapping in OSM; however it does provide a spatial overview of the distribution and an estimate of the average transport time for the population in the zone.
+            In this prototype version only one health zone is available since the data have been verified in the field; however other zones can be added later once the data will be completed.<br>
+            <strong>To get started, just select a health zone in the top menu!</strong></p>
+            <p>This dashboard has been developed by CartONG in the frame of the project "Building a Data Collaborative to support SDGs on Health and WASH in Malawi and DRC", funded by the <a href="http://www.data4sdgs.org/" target="_blank">Global Partnership on Sustainable Development Data (GPSDD)</a>, implemented by CartONG and the Netherlands Red Cross/510. The data has been collected in partnership with OpenStreetMap-DRC and the DRC Ministry of Public Health.</p>
+            <div class="col-12 text-center">
+              <img src="static/img/logo-gpsdd-dark.svg" alt="">
+            </div>
+          </div>
+          <div class="col-12" id="zds-info">
 
+          </div>
         </div>
         <div class="legend-button">
           <div class="opened">
@@ -59,6 +71,5 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/map.js"></script>
-
   </body>
 </html>

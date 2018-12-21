@@ -36,3 +36,5 @@ function showMenu(){
     $('.legend-panel').hide()
   }
 }
+
+showMenu()

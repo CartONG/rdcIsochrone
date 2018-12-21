@@ -53,9 +53,10 @@
   float: left;
   margin: 0;
   height:92vh;
-  width: 20em;
+  width: 30em;
   background-color: white;
   text-align: center;
+  overflow: auto;
 }
 .closed{
   display: none;
@@ -81,4 +82,55 @@
 }
 .btn-link:hover{
   color:#1A1A1B;
+}
+.sdg-logo{
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.app-presentation{
+  margin-top: 20px;
+  text-align: justify;
+}
+.legend-square{
+  display: flex;
+  vertical-align: middle;
+}
+.square900{
+  height: 25px;
+ width: 25px;
+ background-color: #8AEAB7;
+ display: inline-block;
+ margin-right: 5px;
+}
+.square1800{
+  height: 25px;
+ width: 25px;
+ background-color: #15d670;
+ display: inline-block;
+ margin-right: 5px;
+}
+.square3600{
+  height: 25px;
+ width: 25px;
+ background-color: #ee973e;
+ display: inline-block;
+ margin-right: 5px;
+}
+.square14400{
+  height: 25px;
+ width: 25px;
+ background-color: #F34A41;
+ display: inline-block;
+ margin-right: 5px;
+}
+.square28800{
+  height: 25px;
+ width: 25px;
+ background-color: #C0170E;
+ display: inline-block;
+ margin-right: 5px;
 }
