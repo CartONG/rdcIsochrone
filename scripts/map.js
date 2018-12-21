@@ -215,9 +215,12 @@ function showISO(pcode){
 }
 
 function fillInfo(pcode){
-  console.log(pcode);
-  let string = `<div class="col-10 offset-1 legend-title">
-    <span>`+eval('informations.'+zds+'.nom')+`</span>
+  let string = `
+  <div class="col-12 text-left">
+    <img src="static/img/legend-close-icon-active.svg" alt="" class='close-zdc'>
+  </div>
+  <div class="col-10 offset-1 legend-title">
+    <span>`+eval('informations.'+zds+'.nom')+`
   </div>
   <div class="col-12 text-center pop-infos">
     <strong>Estimated population : `+eval('informations.'+zds+'.population')+` people</strong>
@@ -388,10 +391,23 @@ function fillInfo(pcode){
   </div>`
   $('.app-presentation').hide()
   $('#zds-info').html(string)
+  $('.close-zdc').click(function(e){
+    resetApp()
+  })
+}
 
-  if (!$('.opened').is(':hidden')){
-    showMenu()
+function resetApp(){
+  if (map.hasLayer(zdsLayer)) {
+    map.removeLayer(zdsLayer)
   }
+  if (map.hasLayer(isoLayers)) {
+    map.removeLayer(isoLayers)
+  }
+  map.setView([-1.669686, 23.642578], 5)
+  $('#zds-info').html('')
+  $('.app-presentation').show()
+  $("#zds").val('default');
+  $("#zds").selectpicker("refresh");
 }
 
 let informations = {

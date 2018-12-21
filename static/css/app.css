@@ -49,7 +49,7 @@
   box-shadow: 0 0 10px 0 rgba(0,0,0,.2), 0 0 15px 0 rgba(0,0,0,.5);
 }
 .legend-panel{
-  display: none;
+  /* display: none; */
   float: left;
   margin: 0;
   height:92vh;
@@ -133,4 +133,8 @@
  background-color: #C0170E;
  display: inline-block;
  margin-right: 5px;
+}
+
+.close-zdc{
+  cursor: pointer;
 }

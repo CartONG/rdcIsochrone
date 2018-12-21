@@ -9,32 +9,32 @@ $('.legend-button').hover(
   }
 );
 
-$('.legend-button').click(function(e){
-  showMenu()
-})
+// $('.legend-button').click(function(e){
+//   showMenu()
+// })
 
-function showMenu(){
-  if ($('.opened').is(':visible')) {
-    // Change icon in legend button
-    $('.opened').hide()
-    $('.closed').show()
-    // Change hover behavior of the legend button
-    $('.closed').children().each(function(){
-      $(this).toggleClass('inactive-icon')
-    })
-    // Toggle Display of legend panel
-    $('.legend-panel').show();
-  } else {
-    // Change icon in legend button
-    $('.opened').show()
-    $('.closed').hide()
-    // Change hover behavior of the legend button
-    $('.closed').children().each(function(){
-      $(this).toggleClass('inactive-icon')
-    })
-    // Toggle Display of legend panel
-    $('.legend-panel').hide()
-  }
-}
-
-showMenu()
+// function showMenu(){
+//   if ($('.opened').is(':visible')) {
+//     // Change icon in legend button
+//     $('.opened').hide()
+//     $('.closed').show()
+//     // Change hover behavior of the legend button
+//     $('.closed').children().each(function(){
+//       $(this).toggleClass('inactive-icon')
+//     })
+//     // Toggle Display of legend panel
+//     $('.legend-panel').show();
+//   } else {
+//     // Change icon in legend button
+//     $('.opened').show()
+//     $('.closed').hide()
+//     // Change hover behavior of the legend button
+//     $('.closed').children().each(function(){
+//       $(this).toggleClass('inactive-icon')
+//     })
+//     // Toggle Display of legend panel
+//     $('.legend-panel').hide()
+//   }
+// }
+//
+// showMenu()
